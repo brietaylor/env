@@ -7,9 +7,8 @@ Configuration files and fixes for editors, hardware, etc.
     $ sudo cp 51-garmin.rules /etc/udev/rules.d/
     $ sudo cp garmin_gps /etc/modprobe.d/
 
-Been a while since I've used this...  First file allows programs like gpsbabel
-to access my Garmin GPS without being root.  Second file prevents the kernel
-`garmin_gps` module from loading.
+First file allows programs like gpsbabel to access my Garmin GPS without being
+root.  Second file prevents the kernel `garmin_gps` module from loading.
 
 # HP Accelerometer
 
