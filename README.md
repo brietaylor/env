@@ -1,18 +1,17 @@
-# env
+# Overview
 
-In this turbulent day and age, it has yet become impossible to log into a system and have a tasteful set of editor defaults ready to go.  Thus, I must store a set of custom editor settings so that the many machines I use may have some semblence of harmony.
+Configuration files and fixes for editors, hardware, etc.
 
-The person reading this may, upon his or her discretion, choose that a thing such as custom editor settings is not worth one's time.  That is acceptable.  If the reader wishes for a glimpse into the author's soul—I offer no guarantee of your sanity—but nonetheless, kindly welcome you.
-
-# 51-garmin.rules
+# Garmin GPS
 
     $ sudo cp 51-garmin.rules /etc/udev/rules.d/
+    $ sudo cp garmin_gps /etc/modprobe.d/
 
-Been a while since I've used this...  IIRC it allows programs like gpsbabel
-to access my Garmin GPS without being root.  Might also need to blacklist the
-kernel `garmin_gps` driver
+Been a while since I've used this...  First file allows programs like gpsbabel
+to access my Garmin GPS without being root.  Second file prevents the kernel
+`garmin_gps` module from loading.
 
-# 50-accelerometer.hwdb
+# HP Accelerometer
 
     $ sudo cp 50-accelerometer.hwdb /etc/udev/hwdb.d/
 
