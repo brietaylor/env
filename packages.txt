@@ -1,0 +1,1 @@
+vim git meld keepassx vlc gimp inkscape ipython duplicity nload iftop strace qgis gnome-tweak-tool pavucontrol gitg gitk python3-numpy python3-matplotlib
