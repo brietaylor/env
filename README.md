@@ -77,10 +77,10 @@ sudo tee /etc/yum.repos.d/perforce.repo << EOF
 name=Perforce
 baseurl=http://package.perforce.com/yum/rhel/8/x86_64
 enabled=1
-gpgcheck=1
+gpgcheck=0
 EOF
 
-sudo dnf install -y helix-cli --nogpgcheck
+sudo dnf install -y helix-cli
 ```
 
 ## Visual
